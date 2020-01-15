@@ -25,7 +25,7 @@ dataSources:
       eventHandlers:
         - event: Transfer(indexed bytes32,address)
           handler: handleTransfer
-        - event: NewOwner(indexed bytes32,bytes32,address)
+        - event: NewOwner(indexed bytes32,indexed bytes32,address)
           handler: handleNewOwner
         - event: NewResolver(indexed bytes32,address)
           handler: handleNewResolver
