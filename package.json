@@ -1,17 +1,17 @@
 {
   "name": "ela-ens-subgraph",
   "version": "1.0.0",
-  "repository": "https://github.com/luckyyang/elastos-eth-ens",
+  "repository": "https://github.com/luckyyang/ela-ens-subgraph",
   "license": "MIT",
   "scripts": {
     "setup": "npm run codegen && npm run create-local && npm run deploy-local",
     "codegen": "graph codegen --output-dir src/types/",
-    "create-local": "graph create luckyyang/elastos-eth-ens --node http://127.0.0.1:8547",
-    "remove-local": "graph remove luckyyang/elastos-eth-ens --node http://127.0.0.1:8547",
+    "create-local": "graph create luckyyang/ela-ens --node http://127.0.0.1:8547",
+    "remove-local": "graph remove luckyyang/ela-ens --node http://127.0.0.1:8547",
     "build": "graph build",
-    "deploy-local": "graph deploy luckyyang/elastos-eth-ens --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8547/",
-    "deploy": "graph deploy ensdomains/ens --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "watch-local": "graph deploy luckyyang/elastos-eth-ens --watch --debug --node http://127.0.0.1:8547/ --ipfs http://localhost:5001"
+    "deploy-local": "graph deploy luckyyang/ela-ens --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8547/",
+    "deploy": "graph deploy luckyyang/ela-ens --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "watch-local": "graph deploy luckyyang/ela-ens --watch --debug --node http://127.0.0.1:8547/ --ipfs http://localhost:5001"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.11.2",
