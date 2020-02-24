@@ -10,7 +10,7 @@ dataSources:
     name: ENSRegistry
     network: mainnet
     source:
-      address: '0xc55a23c8217935427a3554adcd10c4fd452653e4ed2f4f8fdae0867aee53802a'
+      address: '0x295803Bba2503e0307e3B29D38Ab770Daf3dEc4a'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
