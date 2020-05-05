@@ -28,7 +28,7 @@ import {
 import { Account, AuctionedName, Deed } from './types/schema'
 import { byteArrayFromHex, concat } from './utils'
 
-var rootNode:ByteArray = byteArrayFromHex("93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae")
+var rootNode:ByteArray = byteArrayFromHex("2cc116761f592ca63b5701189b06827a6d04037c4b7593ff66671455ed5779d2")
 
 export function auctionStarted(event: AuctionStarted): void {
   let name = new AuctionedName(event.params.hash.toHex())
