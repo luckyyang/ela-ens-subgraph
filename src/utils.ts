@@ -9,7 +9,7 @@ export function createEventID(event: EthereumEvent): string {
   return event.block.number.toString().concat('-').concat(event.logIndex.toString())
 }
 
-export const ROOT_NODE = '0x0000000000000000000000000000000000000000000000000000000000000000'
+export const ROOT_NODE = '0x2cc116761f592ca63b5701189b06827a6d04037c4b7593ff66671455ed5779d2'
 export const EMPTY_ADDRESS = '0x0000000000000000000000000000000000000000'
 
 // Helper for concatenating two byte arrays
