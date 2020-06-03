@@ -6,12 +6,12 @@
   "scripts": {
     "setup": "npm run codegen && npm run create-local && npm run deploy-local",
     "codegen": "graph codegen --output-dir src/types/",
-    "create-local": "graph create testnet/ela-ens --node http://127.0.0.1:8020",
-    "remove-local": "graph remove testnet/ela-ens --node http://127.0.0.1:8020",
+    "create-local": "graph create mainnet/ela-ens --node http://127.0.0.1:8020",
+    "remove-local": "graph remove mainnet/ela-ens --node http://127.0.0.1:8020",
     "build": "graph build",
-    "deploy-local": "graph deploy testnet/ela-ens --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020/",
-    "deploy": "graph deploy testnet/ela-ens --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "watch-local": "graph deploy testnet/ela-ens --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
+    "deploy-local": "graph deploy mainnet/ela-ens --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020/",
+    "deploy": "graph deploy mainnet/ela-ens --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "watch-local": "graph deploy mainnet/ela-ens --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.17.1",
