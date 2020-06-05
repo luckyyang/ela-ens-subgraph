@@ -136,7 +136,7 @@ dataSources:
     name: BaseRegistrar
     network: mainnet
     source:
-      address: '0xC64F2e1BFA889aE03029B91fBA0b7F2f96a39bEf'
+      address: '0x1BebEFf9A554778110e38c8F9d8DCA4335DD9DdD'
       abi: BaseRegistrar
     mapping:
       kind: ethereum/events
@@ -165,7 +165,7 @@ dataSources:
     name: EthRegistrarController
     network: mainnet
     source:
-      address: '0x701A510b7DD65801B2d65301E1e7Ca0F4939B244'
+      address: '0x225FD9F7845cD77645E05CC1B7A00b526bd370Ec'
       abi: EthRegistrarController
     mapping:
       kind: ethereum/events
